@@ -1,1 +1,156 @@
-[]
+[
+  {
+    "coordinates": {
+      "lng": 103.7746191418176,
+      "lat": 1.313117943881437
+    },
+    "properties": {
+      "title": "SST Gate A",
+      "description": "Step, no wheelchair access",
+      "goodbad": "no"
+    }
+  },
+  {
+    "coordinates": {
+      "lng": 103.77419496091579,
+      "lat": 1.313037435207221
+    },
+    "properties": {
+      "title": "SST Block A",
+      "description": "Lift",
+      "goodbad": "yes"
+    }
+  },
+  {
+    "coordinates": {
+      "lng": 103.77308380505553,
+      "lat": 1.3135085890385056
+    },
+    "properties": {
+      "title": "SST drop-off point",
+      "description": "Ramp for wheelchair access",
+      "goodbad": "yes"
+    }
+  },
+  {
+    "coordinates": {
+      "lng": 103.77277144071763,
+      "lat": 1.313298901854182
+    },
+    "properties": {
+      "title": "SST Block D",
+      "description": "Lift",
+      "goodbad": "yes"
+    }
+  },
+  {
+    "coordinates": {
+      "lng": 103.77372572324981,
+      "lat": 1.3126016656870263
+    },
+    "properties": {
+      "title": "SST field",
+      "description": "Ramp for wheelchair access",
+      "goodbad": "yes"
+    }
+  },
+  {
+    "coordinates": {
+      "lng": 103.77395138052805,
+      "lat": 1.313503676836703
+    },
+    "properties": {
+      "title": "SST canteen",
+      "description": "Ramp for wheelchair access",
+      "goodbad": "yes"
+    }
+  },
+  {
+    "coordinates": {
+      "lng": 103.77401217034827,
+      "lat": 1.313673086780483
+    },
+    "properties": {
+      "title": "SST Gate C",
+      "description": "step, no wheelchair access",
+      "goodbad": "no"
+    }
+  },
+  {
+    "coordinates": {
+      "lng": 103.77393643323995,
+      "lat": 1.312650753903938
+    },
+    "properties": {
+      "title": "SST gate B",
+      "description": "Turnstile does not allow for wheelchair access",
+      "goodbad": "no"
+    }
+  },
+  {
+    "coordinates": {
+      "lng": 103.77859337426958,
+      "lat": 1.311802125056957
+    },
+    "properties": {
+      "title": "Dover MRT exit B",
+      "description": "lift",
+      "goodbad": "yes"
+    }
+  },
+  {
+    "coordinates": {
+      "lng": 103.77849215014908,
+      "lat": 1.3115011211316556
+    },
+    "properties": {
+      "title": "Dover MRT gantry",
+      "description": "Disability-friendly gantry",
+      "goodbad": "yes"
+    }
+  },
+  {
+    "coordinates": {
+      "lng": 103.77842157228173,
+      "lat": 1.3118995349389024
+    },
+    "properties": {
+      "title": "Commonwealth Avenue West",
+      "description": "bumpy road not suitable for wheelchair access",
+      "goodbad": "no"
+    }
+  },
+  {
+    "coordinates": {
+      "lng": 103.77717064986336,
+      "lat": 1.312310821558384
+    },
+    "properties": {
+      "title": "Commonwealth Avenue West",
+      "description": "Extremely narrow road, right next to busy road",
+      "goodbad": "no"
+    }
+  },
+  {
+    "coordinates": {
+      "lng": 103.77853652885801,
+      "lat": 1.3111254185977685
+    },
+    "properties": {
+      "title": "Dover MRT exit A",
+      "description": "lift",
+      "goodbad": "yes"
+    }
+  },
+  {
+    "coordinates": {
+      "lng": 103.7755332353704,
+      "lat": 1.312455586157455
+    },
+    "properties": {
+      "title": "Crosswalk near SST",
+      "description": "staggered crosswalk, disability-friendly",
+      "goodbad": "yes"
+    }
+  }
+]

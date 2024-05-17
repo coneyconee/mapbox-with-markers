@@ -1,14 +1,27 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiY29uZXkiLCJhIjoiY2x2NWw1cWR3MDQ3aDJrbDNvOTV2Mmp3YiJ9.AxeNQ_L8r6zS3fqAQxUpAQ';
 
+
 const map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/mapbox/streets-v11',
   center: [103.773357, 1.313538],
-  zoom: 17
+  zoom: 17,
+  pitch: 60,
+  bearing: -20
 });
 
 const existingMarkers = [];
 const distanceThreshold = 100;
+
+map.addControl(
+  new mapboxgl.GeolocateControl({
+      positionOptions: {
+          enableHighAccuracy: false
+      },
+      trackUserLocation: true,
+      showUserHeading: true
+  })
+);
 
 //calculating dist
 function calculateDistance(coord1, coord2) {
@@ -55,6 +68,7 @@ map.on('style.load', function() {
     //promts
     let title = '';
     let description = '';
+    let goodbad = '';
 
     //validation
     while (!title) {
@@ -71,12 +85,27 @@ map.on('style.load', function() {
       }
     }
 
+    while (!goodbad) {
+      goodbad = prompt("Is this place accessible?:");
+      if (!goodbad) {
+        alert("Field cannot be empty. Please enter 'yes' or 'no'.");
+      }
+    }
+    while (goodbad !== 'yes' && goodbad !== 'no') {
+      goodbad = prompt("Please enter 'yes' or 'no'.")
+      if (goodbad !== 'yes' && goodbad !== 'no') {
+        alert('Invalid input. Must be "yes" or "no".');
+      }
+    }
+  
+
     //templaye for adding new sillies
     const newMarker = {
       coordinates: coordinates,
       properties: {
         title: title,
-        description: description
+        description: description,
+        goodbad: goodbad
       }
     };
 
@@ -107,6 +136,8 @@ map.on('style.load', function() {
 function addMarker(marker) {
   const el = document.createElement('div');
   el.className = 'marker';
+  el.classList.add(marker.properties.goodbad === 'yes' ? 'green' : 'red');
+
 
   new mapboxgl.Marker(el)
     .setLngLat(marker.coordinates)

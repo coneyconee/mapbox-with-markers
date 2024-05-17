@@ -2,18 +2,68 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>Mapbox GL JS Marker Example</title>
+  <title>Mapability</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl-js"></script>
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
   <style>
-    body { margin: 0; padding: 0; }
-    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
-    .marker { background-color: red; width: 20px; height: 20px; border-radius: 50%; }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+      .marker {
+        background-color: #ff6347;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #fff;
+        cursor: pointer;
+      }
+
+      .marker-popup {
+        max-width: 200px;
+      }
+
+      .marker-popup h3 {
+        margin: 0 0 5px;
+      }
+
+      .marker-popup p {
+        margin: 0;
+      }
+    .marker.green { background-color: green; }
+    .marker.red { background-color: red; }
   </style>
 </head>
+
+
+
+
+
+
 <body>
   <div id="map"></div>
   <script src="script.js"></script>
+</body>
+<body id="zindex2">
+  <div>
+    <a href="./home.html">
+      <button type="button" class="button2">Home</button>
+    </a>
+    <a href="./howtouse.html">
+      <button type="button" class="button2">How to Use?</button>
+    </a>
+  </div>
 </body>
 </html>
